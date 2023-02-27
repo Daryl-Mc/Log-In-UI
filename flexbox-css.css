@@ -1,0 +1,37 @@
+/* So i'm going to change my flex direction to column and
+align the items using the column setup 
+the "main" and "cross" axis in the column are opposite of the row
+so in a column justify-content will send content up and down
+align-items will send items left and right*/
+body{
+    background-color: rgb(98, 96, 124);
+}
+.login{
+    display: flex;
+    flex-direction: column; /* column to align flex items vertically*/
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 40px;
+    height: 300px;
+    min-width: 500px;
+    background-color: gray;
+}
+.flex-item{
+    border: 3px solid black; /* Commenting out these borders later */
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+}
+.username{
+    width: 200px;
+
+}
+.password{
+    width: 200px;
+}
+.button{
+    order: 4;
+    padding: 10px;
+    align-self: center;
+}
