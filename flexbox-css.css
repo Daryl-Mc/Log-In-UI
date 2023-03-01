@@ -9,29 +9,41 @@ body{
     align-items: center;
     border: 5px solid black; /* Setting up the border*/
     border-radius: 40px; /*Curves*/
-    min-height: 240px;
-    margin: auto;
-    flex-wrap: wrap;
+    min-width: 250px;
+    max-width: 500px;
+    min-height: 350px;
     background-color: gray;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin: auto;
+    margin-top: 100px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .flex-item{
-    border: 3px solid black; /* Commenting out these borders later */
-    padding: 5px;
-    color: black;
+    /* border: 3px solid black;  Commenting out these borders later */
+    padding: 10px;
     font-size: 18px;
-}
-.username{
-    width: 200px;
-
-}
-.password{
+    text-align:  center;
     width: 200px;
 }
 .button{
     order: 4;
-    padding: 10px;
-    align-self: center;
+    padding: 30px;
+}
+/*Not flexbox styling*/
+
+#usr{
+    appearance: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 25px;
+}
+#pwd{
+    appearance: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 25px;
+}
+#btn{
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
 }
