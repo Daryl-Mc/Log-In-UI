@@ -2,6 +2,7 @@
 align the items using the column setup */
 body{
     background-color: rgb(98, 96, 124);
+    font-family: "Nunito Sans", sans-serif; /* Web Font */
 }
 .login{
     display: flex;
@@ -28,6 +29,7 @@ body{
     order: 4;
     padding: 30px;
 }
+
 /*Not flexbox styling*/
 
 #usr{
@@ -44,6 +46,18 @@ body{
 }
 #btn{
     border-radius: 10px;
+    padding: 5px;
     width: 150px;
-    height: 30px;
+    height: 35px;
+    background-color:darkslategrey;
+    color: white;
+
 }
+#btn:hover{ /* Styling when the button is hovered */
+    background-color:rgb(172, 151, 151);
+    transition: 0.9s;
+}
+#btn:active{ /* Styling when the button is clicked */
+    background-color: darkslategray;
+}
+/* Added additional styles to my elements inside my flex containers*/
