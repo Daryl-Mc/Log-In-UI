@@ -1,25 +1,25 @@
 /* So i'm going to change my flex direction to column and
-align the items using the column setup 
-the "main" and "cross" axis in the column are opposite of the row
-so in a column justify-content will send content up and down
-align-items will send items left and right*/
+align the items using the column setup */
 body{
     background-color: rgb(98, 96, 124);
 }
 .login{
     display: flex;
     flex-direction: column; /* column to align flex items vertically*/
-    justify-content: flex-start;
     align-items: center;
-    border: 5px solid black;
-    border-radius: 40px;
-    height: 300px;
-    min-width: 500px;
+    border: 5px solid black; /* Setting up the border*/
+    border-radius: 40px; /*Curves*/
+    min-height: 240px;
+    margin: auto;
+    flex-wrap: wrap;
     background-color: gray;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .flex-item{
     border: 3px solid black; /* Commenting out these borders later */
-    padding: 10px;
+    padding: 5px;
     color: black;
     font-size: 18px;
 }
