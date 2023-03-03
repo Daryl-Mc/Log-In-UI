@@ -1,63 +1,76 @@
 /* So i'm going to change my flex direction to column and
 align the items using the column setup */
 body{
-    background-color: rgb(98, 96, 124);
+    background-color: #502f4c;
+    height: 100%;
     font-family: "Nunito Sans", sans-serif; /* Web Font */
 }
 .login{
     display: flex;
     flex-direction: column; /* column to align flex items vertically*/
-    align-items: center;
-    border: 5px solid black; /* Setting up the border*/
+    align-content: center;
     border-radius: 40px; /*Curves*/
-    min-width: 250px;
-    max-width: 500px;
-    min-height: 350px;
-    background-color: gray;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
 }
-.flex-item{
-    /* border: 3px solid black;  Commenting out these borders later */
+.flex-items{ /* Second Box to style all my flexbox elements to a concise box inside the container*/
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     font-size: 18px;
-    text-align:  center;
-    width: 200px;
+    align-items:  center;
+    border:8px solid black;
+    border-radius: 40px;
+    min-width: 400px;
+    padding:30px;
+    background-color: #70587c;
+    min-height: 350px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .button{
-    order: 4;
-    padding: 30px;
+    order: 5;
+    margin: 15px;
+}
+.checkbox{
+    margin-top: 20px;
 }
 
+.username{
+    padding: 10px;
+}
+.password{
+    padding: 10px;
+}
 /*Not flexbox styling*/
 
 #usr{
     appearance: none;
     border-radius: 10px;
     width: 200px;
-    height: 25px;
+    height: 30px;
 }
 #pwd{
     appearance: none;
     border-radius: 10px;
     width: 200px;
-    height: 25px;
+    height: 30px;
 }
 #btn{
     border-radius: 10px;
     padding: 5px;
-    width: 150px;
+    width: 250px;
     height: 35px;
-    background-color:darkslategrey;
+    border: 0px;
     color: white;
-
+    background-image: linear-gradient(to right, #c6aae9 0%, #764a8c 55%, #5e2257 100%);
+/* Added a background-image to make a gradient effect*/
 }
 #btn:hover{ /* Styling when the button is hovered */
-    background-color:rgb(172, 151, 151);
-    transition: 0.9s;
+    background-position: center right;
 }
 #btn:active{ /* Styling when the button is clicked */
-    background-color: darkslategray;
+    background-color: #000000;
 }
-/* Added additional styles to my elements inside my flex containers*/
+/* Added additional styles to my elements inside my flex boxes*/
