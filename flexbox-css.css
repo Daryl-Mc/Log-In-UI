@@ -1,9 +1,11 @@
 /* So i'm going to change my flex direction to column and
 align the items using the column setup */
 body{
-    background-color: #502f4c;
+    background-color: #000;
     height: 100%;
     font-family: "Nunito Sans", sans-serif; /* Web Font */
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .login{
     display: flex;
@@ -61,16 +63,38 @@ body{
     border-radius: 10px;
     padding: 5px;
     width: 250px;
-    height: 35px;
+    height: 50px;
     border: 0px;
     color: white;
     background-image: linear-gradient(to right, #c6aae9 0%, #764a8c 55%, #5e2257 100%);
 /* Added a background-image to make a gradient effect*/
 }
 #btn:hover{ /* Styling when the button is hovered */
-    background-position: center right;
+    background-position: right center;
 }
 #btn:active{ /* Styling when the button is clicked */
     background-color: #000000;
 }
 /* Added additional styles to my elements inside my flex boxes*/
+section{
+    min-height: 300px;
+    max-height:500px;
+}
+.dark{
+    background-color:#000000;
+}
+
+.bubble::after {
+    content: "";
+    border-top-left-radius: 80% 100%;
+    border-top-right-radius: 80% 100%;
+    position: absolute;
+    bottom: 0;
+    height: 85%;
+    width: 100%;
+    background-color: #502F4C;
+    z-index: -1;
+    min-height: 500px;
+    overflow-x: hidden;
+}
+
